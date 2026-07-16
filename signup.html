@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Create account — scholarships</title>
+<meta name="description" content="Create your free Luminary account and start applying for life-changing scholarships." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand"><span class="brand-mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span><span class="brand-name">scholarships</span></a>
+    <nav class="nav-desktop" data-nav>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="login.html" class="btn btn-ghost">Login</a>
+      <a href="signup.html" class="btn btn-primary">Create account</a>
+    </div>
+    <button class="menu-toggle" data-menu-toggle aria-label="Open menu" aria-expanded="false">
+      <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="nav-mobile" data-mobile-nav data-nav>
+    <div class="container">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="news.html">News</a><a href="contact.html">Contact</a>
+      <div class="nav-mobile-cta"><a href="login.html" class="btn btn-outline">Login</a><a href="signup.html" class="btn btn-primary">Create account</a></div>
+    </div>
+  </div>
+</header>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>Start your journey</h1>
+    <p class="sub">Free forever. Takes about a minute.</p>
+    <form data-form>
+      <div class="field"><label>Full name</label><input type="text" placeholder="Adah Akogwu" required /></div>
+      <div class="field"><label>Email</label><input type="email" placeholder="you@example.com" required /></div>
+      <div class="field"><label>Password</label><input type="password" placeholder="Choose a strong password" required /></div>
+      <!-- <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center">Create account</button> -->
+      <a href="form.html" class="btn btn-primary" style="width:100%; justify-content:center">Create account</a>
+    </form>
+    <p class="auth-alt">Already have an account? <a href="login.html">Sign in</a></p>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="brand"><span class="brand-mark" style="width:32px;height:32px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span><span class="brand-name" style="font-size:1.1rem">Luminary</span></div><p class="tagline">Connecting exceptional students with life-changing scholarships worldwide.</p></div>
+    <div><h4>Platform</h4><ul><li><a href="index.html">Browse scholarships</a></li><li><a href="news.html">News</a></li><li><a href="about.html">About us</a></li></ul></div>
+    <div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="signup.html">Create account</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>hello@luminary.edu</li><li>+1 (800) 555-0199</li></ul></div>
+  </div>
+  <div class="footer-bottom">© <span id="year"></span> Luminary Scholarship Foundation</div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
