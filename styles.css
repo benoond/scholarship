@@ -178,6 +178,9 @@ h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; font
 @media (min-width: 768px) { .cta .actions { justify-content: flex-end; } }
 /* ---- Footer ---- */
 .footer { margin-top: 6rem; background: var(--surface); border-top: 1px solid var(--border); }
+@media (max-width: 767px) {
+  .footer { padding: 6rem 20px 20px 20px;}
+}
 .footer-grid { display: grid; gap: 2rem; padding: 3rem 0; grid-template-columns: 1fr; }
 @media (min-width: 768px) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
 .footer h4 { font-family: var(--font-sans); font-size: .7rem; text-transform: uppercase; letter-spacing: .15em; color: var(--fg); margin-bottom: 1rem; font-weight: 600; }
